@@ -1,6 +1,19 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginVue } from '@rsbuild/plugin-vue';
+import { pluginReact } from '@rsbuild/plugin-react';
+import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 
 export default defineConfig({
-  plugins: [pluginVue()],
+  plugins: [
+    pluginReact(),
+    pluginModuleFederation({
+      name: 'header_mfe',
+      exposes: {
+        './button': './src/button.tsx',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 3001,
+  },
 });
