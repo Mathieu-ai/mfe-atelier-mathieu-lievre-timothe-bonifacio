@@ -1,5 +1,5 @@
 {
-  "name": "shell",
+  "name": "footer-mfe",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,15 +9,9 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@heroicons/react": "^2.2.0",
     "@module-federation/enhanced": "^0.8.11",
-    "@tailwindcss/cli": "^4.0.6",
-    "autoprefixer": "^10.4.20",
-    "heroicons": "^2.2.0",
-    "postcss": "^8.5.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.6"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@module-federation/rsbuild-plugin": "^0.8.11",
