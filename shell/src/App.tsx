@@ -1,15 +1,18 @@
-import './App.css';
-
-import ProviderButton from 'header_mfe/button';
+import "./App.css";
+import ProviderButton from "header_mfe/header";
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-      <div>
-        <ProviderButton />
-      </div>
+    <div className="dashboard-container">
+      <main className="main-content">
+        <header className="header">
+          <ProviderButton />
+        </header>
+        <section className="content">
+          <h1>Welcome to the Dashboard</h1>
+          <p>This is your main content area.</p>
+        </section>
+      </main>
     </div>
   );
 };
